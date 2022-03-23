@@ -2,24 +2,16 @@
 **Deploy at:** [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)
 
 ## Technology stack
-**Tech stack:** MERN 
-
-### Client side
-- ReactJS
-### Sercer side
-- MongoDB
-- ExpressJS
-- NodeJS
-
+**Tech stack:** MERN (**M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS)
 
 ## Installation  
 - Clone project 
-```
+```sh
 git clone https://github.com/QuanBlue/portfolio.git
 ```
 
 - Install npm on Client and Server
-```
+```sh
 cd client
 npm install
 cd ..
@@ -34,17 +26,17 @@ npm install
 
 ## Running application:
   - Run server: server is running on port 5000  
-    ```
+    ```sh
     npm run start-server
     ```
   - Run client: Client is running on port 3000  
-    ```
+    ```sh
     npm run start-client 
     ```
 
 
 ## Deploy to Heroku
-```
+```sh
 git add .
 git commit -m "update application"
 git push heroku master
