@@ -1,0 +1,42 @@
+* {
+    --color-text: #B3BECB;
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.title-aboutme {
+    font-size: 40px !important;
+}
+
+b {
+    font-weight: 600;
+    color: gray;
+}
+
+p {
+    color: white;
+    text-align: left !important;
+}
+
+.email {
+    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+}
+
+.message {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center !important;
+    color: var(--color-text);
+}
+
+.fa-heart {
+    color: red;
+}
+
+@media only screen and (max-width: 500px){
+    .col-6 {
+        width: 100%;
+    }
+}
+

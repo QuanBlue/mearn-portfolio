@@ -1,0 +1,33 @@
+
+* {
+    --image-radius: 45vw;
+    --background-color-2: linear-gradient(145deg, #1e2024, #23272b);
+}
+
+section {
+    height: 100vh;
+}
+
+.right-card {
+    width: 100vw;
+    background-image: var(--background-color-right-card);
+    z-index: 10;
+}
+
+.border-0 {
+    border-radius: 0px !important;
+}
+
+.right-card:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+@media only screen and (max-height: 550px){
+    #s-home {
+        height: 700px !important;
+        border: 5px solid cyan !important;
+    }
+    #s-resume, #s-about{
+        height:  850px !important;
+    }
+}

@@ -1,0 +1,15 @@
+.education {
+    overflow: auto;
+    height: 100% !important;
+}
+
+.time {
+    font-size: 15px !important;
+    color: red;
+}
+
+.stage {
+    font-size: 30px !important;
+    font-weight: bold;
+    color: white;
+}

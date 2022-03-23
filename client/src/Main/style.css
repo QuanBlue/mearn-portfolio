@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.3s;
+    --shadow: 10px 10px 19px #1c1e22;
+    --shadow-1: 0px 0px 19px #2d3135;
+    --shadow-2: 5px 5px 5px #1c1e22;
+    --background-color-right-card: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-left-card: #2a2a2a;
+    --background-color: linear-gradient(145deg, #FF014F, #901ba5);
+    --border-avatar: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --highlight-red: #FF014F;
+    --text-color: #B3BECB;
+}
+
+body {
+    background-image: var(--background-color) !important;
+    color: var(--text-color);
+    /* height: 100vh !important; */
+    width: 100vw !important;
+    margin: 0px;
+    padding: 0px;
+} 
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+    height: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--highlight-red); 
+}
+
+::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 25px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    margin-top: 100px;
+}

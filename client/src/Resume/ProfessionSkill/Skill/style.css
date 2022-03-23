@@ -1,0 +1,22 @@
+.name { 
+    font-size: 17px;
+    color: white;
+    background-color: #bb003b;
+    border-radius: 15px;
+}
+
+.name:hover {
+    background-color: #FF014F;
+    font-weight: bold;
+    cursor: pointer;
+    transform:rotate(-5deg) scale(1.1);
+}
+
+
+@media only screen and (max-width: 750px){
+    .name {
+        font-size: 14px;
+    }
+}
+
+

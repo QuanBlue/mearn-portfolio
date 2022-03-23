@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.3s;
+    --shadow: 10px 10px 19px #1c1e22;
+    --shadow-1: 0px 0px 19px #2d3135;
+    --shadow-2: 5px 5px 5px #1c1e22;
+    --background-color-right-card: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-left-card: #2a2a2a;
+    --background-color: linear-gradient(145deg, #FF014F, #901ba5);
+    --border-avatar: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --highlight-red: #FF014F;
+    --text-color: #B3BECB;
+}
+
+body .rounded {
+    border-radius: 30px !important;
+}
+
+body .main-container{
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+body .container {
+    background-color: #212428;
+    height: 600px;
+    padding: 0px;
+    box-shadow: var(--shadow);
+}
+
+body .card {
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--background-color-left-card);
+}
+
+/* .logo img{
+    width:250px;
+} */
+
+/* .container .left-card {
+    height: 100%; 
+    width:300px;
+    border-radius:20px 0px 0px 20px;
+    background-color: var(--background-color-left-card);
+}
+
+.container .card .left-card .avatar {
+    border-radius: 50%;
+    background: var(--border-avatar);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container .card .left-card h3{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container .card .left-card h4{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.container .card .left-card .avatar img {
+    width: 150px;
+    height: 150px;
+    padding:8px;
+    border-radius: 50%; 
+    border: 5px solid var(--border-img-color);
+}
+
+.container .card .left-card .myname {
+    text-align: center;
+}
+
+.icons a{
+    background-color: #202327;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.icons a:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: var(--shadow-2);
+    background-color: #2c3035;
+}
+.icons .icon-fb{
+    margin-left: -12px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 8px 8px 8px 15px;
+    border-radius: 10px;
+    color: gray;
+}
+
+.icons .icon-insta, .icon-github{
+    margin-left: -12px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 8px 8px 8px 12px;
+    border-radius: 10px;
+    color: gray;
+}
+
+.icons i:hover{
+    color: white;
+} */
+
+.right-card {
+    height: 100%;
+    /* width: 90% !important; */
+    border-radius: 20px !important;
+    background-image: var(--background-color-right-card);
+    box-shadow: var(--shadow-1); 
+    z-index: 10;
+}
+
+.right-card:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.main-menu{
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    background-image: var(--background-color-right-card);
+    box-shadow: var(--shadow);
+}
+
+.main-menu:hover {
+    background-image: var(--background-color-right-card);
+}
+
+.main-menu button {
+    background-color: transparent;
+    border: 0px;
+    width: 65px;
+}
+
+.main-menu .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: gray;
+    font-size: 25px;
+}
+
+.icon .tooltiptext {
+    align-items: var(--background-color-left-card);
+    border-radius: 8px !important;
+    background-color: var(--highlight-red);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+    margin-left: -70px;
+    width: max-content;
+    opacity: 0%;
+}
+
+.main-menu .icon:hover {
+    color: var(--highlight-red) !important;
+}
+
+.main-menu .icon:hover .tooltiptext {
+    visibility: visible;
+    opacity: 100%;
+    transform: translate(30px, -50px);
+
+    transition: 0.3s;
+}
+
+
+
+
+@media only screen and (min-width: 1400px) {
+    .main-container {
+        width: 1400px !important;
+    }
+
+    .main-menu {
+        left: 1300px !important;
+    }
+    
+}
+

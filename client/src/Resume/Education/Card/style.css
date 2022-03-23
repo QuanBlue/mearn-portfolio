@@ -1,0 +1,63 @@
+.e-card {
+    /* border: 1px solid red; */
+    height: 100% !important;
+    border-radius:10px !important;
+    background-image: linear-gradient(135deg, #1B1D21, #32353b);
+    box-shadow: 10px 10px 19px #000000;
+}
+
+
+.title {
+    font-size: 21px !important;
+    font-weight: bold;
+}
+
+.milestone {
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.brief-content {
+    font-size: 14px;
+    text-align: justify;
+    color: gray !important;
+    white-space: pre-wrap;
+}
+
+.dot {
+    font-size: 150px;
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: -20px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}   
+
+.dot-inner{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+.row-card:hover .dot-inner {
+    background-color: red;
+}
+
+.row-card:hover .e-card{
+    background-image: linear-gradient(135deg, #232529, #232529);
+}
+
+.row-card:hover .e-card .title{
+    color: white;
+}
+
+.row-card:hover .e-card .brief-content{
+    color: #B3BECB !important;
+}

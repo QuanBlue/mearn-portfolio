@@ -1,0 +1,141 @@
+*{
+    --text-color: #B3BECB;
+}
+
+body {
+    color: white;
+}
+
+img {
+    width: 200px;
+    height:200px;
+}
+
+.home-container {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 37px;
+    font-weight: bolder;
+}
+
+.intro {
+    font-size: 18px;
+    text-align: justify !important;
+    color: var(--text-color) !important;
+} 
+
+b {
+    color: var(--text-color) !important;
+}
+
+.home {
+    height: 100%;
+}
+
+.bold-name {
+    color: #FF014F;
+    font-size: 37px;
+}
+
+.introduce {
+    overflow: auto;
+}
+
+ul{
+    list-style-type: none;
+    border-radius: 20px;
+    background-color: var(--background-color-left-card);
+}
+
+@media only screen and (max-width: 370px){
+    h3 {
+        font-size: 16px;
+    }
+
+    h1, .bold-name {
+        font-size: 25px !important;
+    }
+    .intro {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 371px) and (max-width: 699px){
+    h3 {
+        font-size: 18px;
+    }
+
+    h1, .bold-name {
+        font-size: 30px !important;
+    }
+    .intro {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 879px){
+    h3 {
+        font-size: 17px;
+    }
+
+    h1, .bold-name {
+        font-size: 37px !important;
+    }
+    
+    .intro {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1199px){
+    h3 {
+        font-size: 17px;
+    }
+
+    h1, .bold-name {
+        font-size: 45px !important;
+    }
+    
+    .intro {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    h1, .bold-name {
+        font-size: 55px !important;
+    }
+    
+    .intro {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1360px) {
+    h3 {
+        font-size: 25px;
+    }
+
+    h1, .bold-name {
+        font-size: 60px !important;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+}

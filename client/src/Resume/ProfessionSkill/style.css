@@ -1,0 +1,12 @@
+.title-skill {
+    font-size: 30px !important;
+    margin-bottom: 3px;
+    margin-top: 30px;
+    color: white
+}
+
+@media only screen and (max-width: 349px){
+    .title-skill {
+        font-size: 22px !important;
+    }
+}
