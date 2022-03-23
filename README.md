@@ -17,12 +17,24 @@
   - `cd ..`
   - `npm install`  
 
+- Config `.env` file
+  - Create `.env` file in `./portfolio`
+  - Update `.env` file with `DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio`
+
 
 - Running application
   - Run server: server is running on port 5000  
     `npm run start-server` 
   - Run client: Client is running on port 3000  
     `npm run start-client`
+
+
+## Deploy to Heroku
+- `git add .`
+- `git commit -m "update application"`
+- `git push heroku master`
+
+mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
 
 
 
