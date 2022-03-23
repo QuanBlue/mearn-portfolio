@@ -12,9 +12,10 @@
   - `cd portfolio`
 
 - Install npm on Client and Server:
-  - `npm install`  
   - `cd client`  
   - `npm install`
+  - `cd ..`
+  - `npm install`  
 
 
 - Running application
