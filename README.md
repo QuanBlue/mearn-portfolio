@@ -12,7 +12,8 @@
 `git clone https://github.com/QuanBlue/portfolio.git`
 
 #### Install  
-`cd portfolio && npm install`
+`cd .\portfolio\`
+`npm install`
 
 
 #### Run
