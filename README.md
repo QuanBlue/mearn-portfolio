@@ -13,13 +13,18 @@
 
 
 ## Installation  
-- Clone: `git clone https://github.com/QuanBlue/portfolio.git`
+- Clone project 
+```
+git clone https://github.com/QuanBlue/portfolio.git
+```
 
-- Install npm on Client and Server:
-  > `cd client`  
-  > `npm install`  
-  > `cd ..`  
-  > `npm install`  
+- Install npm on Client and Server
+```
+cd client
+npm install
+cd ..
+npm install
+```
 
 - Config `.env` file
   - Create `.env` file in `./portfolio`
@@ -29,17 +34,21 @@
 
 ## Running application:
   - Run server: server is running on port 5000  
-    `npm run start-server` 
+    ```
+    npm run start-server
+    ```
   - Run client: Client is running on port 3000  
-    `npm run start-client`
+    ```
+    npm run start-client 
+    ```
 
 
 ## Deploy to Heroku
-> `git add .`  
-> `git commit -m "update application"`  
-> `git push heroku master`
-
-mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
+```
+git add .
+git commit -m "update application"
+git push heroku master
+```
 
 
 
