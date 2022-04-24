@@ -7,13 +7,13 @@ var content = [
 ]
 
 class Home extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props);
         this.state = {
             content: ""
         };
     }
-    
+
     componentDidMount() {
         let clear = false;
         let i = 0;
@@ -28,17 +28,17 @@ class Home extends Component {
 
                 document.getElementById("content").innerHTML = this.state.content;
                 i++;
-                if (i === content[idxContent].length) 
+                if (i === content[idxContent].length)
                     clear = true;
             }
-            else if (clear === true){
+            else if (clear === true) {
                 this.setState({
                     content: this.state.content.substring(0, this.state.content.length - 1)
                 });
 
                 document.getElementById("content").innerHTML = this.state.content;
                 i--;
-                
+
                 if (i === 1) {
                     clear = false;
                     idxContent++;
@@ -49,7 +49,7 @@ class Home extends Component {
         }, 100)
     }
 
-    componentWillUnmount () {
+    componentWillUnmount() {
         clearInterval(this.myInterval);
     }
 
@@ -59,14 +59,16 @@ class Home extends Component {
                 <div id='home-content' className='pt-5'>
                     <h3 className="mb-2">W E L C O M E &nbsp; T O &nbsp; M Y &nbsp; W O R L D</h3>
                     <h1 className="mb-0">Hi, I'm <span className="bold-name">Thanh Quân</span></h1>
-                    <div className="introduce">
-                        
-                        <p className='intro'>
-                            I used to live in Cam Ranh city. Now, I'm living in Ho Chi Minh city and studying Information Technology at Ho Chi Minh University of Science. My major is Computer Network.<br/>
-                            My target is become a <b>DevOps engineer</b>.
+                    <h2 id="content" className='fw-bold'> </h2>
 
+                    <div className="introduce">
+                        <p className='intro'>
+                            I used to live in Cam Ranh city. Now, I'm living in Ho Chi Minh city and studying Information Technology at Ho Chi Minh University of Science. My major is Computer Network.<br />
+                            &#183; My short term target is become a <strong>Front-end Engineer</strong>. <br />
+                            &#183; In the long run, I hope to work as a <strong>Full-stack Engineer.</strong>
                         </p>
                     </div>
+
                 </div>
             </div>
         );

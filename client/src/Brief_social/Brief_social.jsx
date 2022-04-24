@@ -12,18 +12,22 @@ function Home() {
             <h3 className="myname mb-0 mt-3">Thanh Quân</h3>
             <h4 className="mb-5">S&nbsp;t&nbsp;u&nbsp;d&nbsp;e&nbsp;n&nbsp;t</h4>
 
-            <div className="icons row p-2 mt-5">
-                <a href="https://www.facebook.com/QuanBlueee/" target="_blank">
-                    <i className="fab fa-facebook-f icon-fb"></i>
-                </a>
-                <a href="https://www.instagram.com/wuanblue/" target="_blank">
-                    <i className="fab fa-instagram icon-insta"></i>
-                </a>
+            <div className="icons row p-2 mt-5 d-flex justify-content-center">
                 <a href="https://github.com/QuanBlue" target="_blank" >
                     <i className="fab fa-github-alt icon-github"></i>
                 </a>
+                <a href="https://www.linkedin.com/in/quanblue/" target="_blank" >
+                    <i className="fab fa-linkedin-in icon-linkedin" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.facebook.com/QuanBlueee/" target="_blank">
+                    <i className="fab fa-facebook-f icon-fb"></i>
+                </a>
+                <a href="https://www.instagram.com/quanblueee/" target="_blank">
+                    <i className="fab fa-instagram icon-insta"></i>
+                </a>
             </div>
-        </div>
+        </div >
     );
 }
 

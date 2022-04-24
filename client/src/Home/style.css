@@ -29,7 +29,7 @@ h1 {
 }
 
 .intro {
-    font-size: 18px;
+    font-size: 18px !important;
     text-align: justify !important;
     color: var(--text-color) !important;
 } 
@@ -66,7 +66,7 @@ ul{
         font-size: 25px !important;
     }
     .intro {
-        font-size: 13px;
+        font-size: 13px !important;
     }
 }
 
@@ -79,7 +79,7 @@ ul{
         font-size: 30px !important;
     }
     .intro {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 }
 
@@ -93,7 +93,7 @@ ul{
     }
     
     .intro {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }
 
