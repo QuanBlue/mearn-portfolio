@@ -31,6 +31,7 @@ npm install
     ```
   - Run client: Client is running on port 3000  
     ```sh
+    cd client
     npm run start-client 
     ```
 
