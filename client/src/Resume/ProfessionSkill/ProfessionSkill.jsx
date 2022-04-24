@@ -8,10 +8,12 @@ function ProfessionSkill() {
         _id: '',
         name: '',
     }]);
+    
     const [desSkills, setDesSkill] = useState([{
         _id: '',
         name: '',
     }]);
+
     const [toolkits, setToolkit] = useState([{
         _id: '',
         name: '',

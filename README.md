@@ -29,12 +29,21 @@ npm install
     ```sh
     npm run start-server
     ```
-  - Run client: Client is running on port 3000  
+  - Run client: Client is running on port 3000 (open another terminal)
     ```sh
-    cd client
     npm run start-client 
     ```
 
+## Fetch data (testing)
+I have deploy server for you can test  
+> ### Get developer skill
+> https://quan-portfolio-server.herokuapp.com/api/dev-skill
+> ### Get design skill
+> https://quan-portfolio-server.herokuapp.com/api/des-skill
+> ### Get toolkit
+> https://quan-portfolio-server.herokuapp.com/api/toolkit
+> ### Get education
+> https://quan-portfolio-server.herokuapp.com/api/education
 
 ## Deploy to Heroku
 ```sh
