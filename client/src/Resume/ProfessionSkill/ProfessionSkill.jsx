@@ -25,38 +25,43 @@ function ProfessionSkill() {
 	]);
 
 	useEffect(() => {
+		let isMounted = true; // avoid memory leak
+
 		// fetch dev skill
-		fetch("/api/dev-skill")
+		fetch("http://localhost:5000/api/dev-skill")
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
 				}
 			})
 			.then((jsonRes) => {
-				setDevSkill(jsonRes);
+				if (isMounted) setDevSkill(jsonRes);
 			});
 
 		// fetch des skill
-		fetch("/api/des-skill")
+		fetch("http://localhost:5000/api/des-skill")
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
 				}
 			})
 			.then((jsonRes) => {
-				setDesSkill(jsonRes);
+				if (isMounted) setDesSkill(jsonRes);
 			});
 
 		// fetch toolkit
-		fetch("/api/toolkit")
+		fetch("http://localhost:5000/api/toolkit")
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
 				}
 			})
 			.then((jsonRes) => {
-				setToolkit(jsonRes);
+				if (isMounted) setToolkit(jsonRes);
 			});
+		return () => {
+			isMounted = false;
+		};
 	});
 
 	let element_devSkill = devSkills.map((devSkill, index) => {

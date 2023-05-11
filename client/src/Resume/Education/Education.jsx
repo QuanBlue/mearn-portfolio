@@ -12,17 +12,22 @@ function Education() {
 	]);
 
 	useEffect(() => {
+		let isMounted = true; // avoid memory leak
+
 		// fetch education
-		fetch("/api/education")
+		fetch("http://localhost:5000/api/education")
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
 				}
 			})
 			.then((jsonRes) => {
-				console.log("🚀  jsonRes:", jsonRes);
-				setEducation(jsonRes);
+				if (isMounted) setEducation(jsonRes);
 			});
+
+		return () => {
+			isMounted = false;
+		};
 	});
 
 	let element_education = educations.map((education, index) => {
