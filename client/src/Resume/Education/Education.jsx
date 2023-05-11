@@ -1,6 +1,7 @@
 import "./style.css";
 import React, { useState, useEffect } from "react";
 import Card from "./Card/Card";
+import { REACT_APP_SERVER_URL } from "../../index";
 
 function Education() {
 	const [educations, setEducation] = useState([
@@ -13,9 +14,10 @@ function Education() {
 
 	useEffect(() => {
 		let isMounted = true; // avoid memory leak
+		console.log("Server url: ", REACT_APP_SERVER_URL);
 
 		// fetch education
-		fetch("http://localhost:5000/api/education")
+		fetch(`${REACT_APP_SERVER_URL}/api/education`)
 			.then((res) => {
 				if (res.ok) {
 					return res.json();

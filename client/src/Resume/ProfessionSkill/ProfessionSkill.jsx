@@ -1,6 +1,8 @@
 import "./style.css";
 import React, { useEffect, useState } from "react";
 import Skill from "./Skill/Skill";
+// import { REACT_APP_SERVER_URL } from "../../service/helper.js";
+import { REACT_APP_SERVER_URL } from "../../index";
 
 function ProfessionSkill() {
 	const [devSkills, setDevSkill] = useState([
@@ -28,7 +30,7 @@ function ProfessionSkill() {
 		let isMounted = true; // avoid memory leak
 
 		// fetch dev skill
-		fetch("http://localhost:5000/api/dev-skill")
+		fetch(`${REACT_APP_SERVER_URL}/api/dev-skill`)
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
@@ -39,7 +41,7 @@ function ProfessionSkill() {
 			});
 
 		// fetch des skill
-		fetch("http://localhost:5000/api/des-skill")
+		fetch(`${REACT_APP_SERVER_URL}/api/des-skill`)
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
@@ -50,7 +52,7 @@ function ProfessionSkill() {
 			});
 
 		// fetch toolkit
-		fetch("http://localhost:5000/api/toolkit")
+		fetch(`${REACT_APP_SERVER_URL}/api/toolkit`)
 			.then((res) => {
 				if (res.ok) {
 					return res.json();
