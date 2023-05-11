@@ -5,7 +5,7 @@ import { useState } from "react";
 import Home from "../../Home/Home";
 import AboutMe from "../../AboutMe/AboutMe";
 import Resume from "../../Resume/Resume";
-import Brief_social from "../../Brief_social/Brief_social";
+import BriefSocial from "../../Brief_social/Brief_social";
 
 function PcResponsive() {
 	function navRightCard(stage) {
@@ -57,7 +57,7 @@ function PcResponsive() {
 			{/* card */}
 			<div className="container rounded">
 				<div className="d-flex flex-row card">
-					<Brief_social />
+					<BriefSocial />
 
 					<div className="right-card">
 						{/* Home subpage */}

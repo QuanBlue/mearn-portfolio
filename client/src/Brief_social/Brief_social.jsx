@@ -1,12 +1,12 @@
 import "./style.css";
 import React from "react";
-import avatar from "../../src/pic/Avatar.jpg";
+import Avatar from "../../src/pic/Avatar.jpg";
 
 function Home() {
 	return (
 		<div className="brief-card d-flex flex-column justify-content-center align-items-center pt-5">
 			<div className="avatar mt-4 mx-4">
-				<img src={avatar} alt="avatar" />
+				<img src={Avatar} alt="avatar" />
 			</div>
 
 			<h3 className="myname mb-0 mt-3">Thanh Quân</h3>
