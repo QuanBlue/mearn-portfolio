@@ -1,29 +1,29 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "usrname: quanblue\r passwd: 1Dw2jNc6ByeNzfyY",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "start-server":"nodemon server.js",
-    "start-client": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/QuanBlue/portfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/QuanBlue/portfolio/issues"
-  },
-  "homepage": "https://github.com/QuanBlue/portfolio#readme",
-  "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.7",
-    "nodemon": "^2.0.15"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "usrname: quanblue\r passwd: 1Dw2jNc6ByeNzfyY",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"install-dependency": "npm install && cd client && npm install && cd ..",
+		"server": "nodemon server.js",
+		"client": "cd client && npm start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/QuanBlue/portfolio.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/QuanBlue/portfolio/issues"
+	},
+	"homepage": "https://github.com/QuanBlue/portfolio#readme",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"mongoose": "^6.2.7",
+		"nodemon": "^2.0.15"
+	}
 }
