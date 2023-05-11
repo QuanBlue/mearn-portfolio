@@ -1,7 +1,6 @@
 {
 	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "usrname: quanblue\r passwd: 1Dw2jNc6ByeNzfyY",
+	"version": "1.0.2",
 	"main": "server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
