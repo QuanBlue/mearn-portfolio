@@ -20,14 +20,6 @@ app.use(cors({ origin: true, credentials: true }));
 // route
 app.use("/", require("./routes/route"));
 
-// // server production assesrs
-// if (process.env.NODE_ENV === "production") {
-//     app.use(express.static('client/build'));
-//     app.get("*", (req, res) => {
-//         res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-//     });
-// }
-
 // listen on port PORT (50000)
 app.listen(PORT, function () {
 	console.log("Express server is running on port", PORT);

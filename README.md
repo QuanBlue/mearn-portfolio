@@ -16,9 +16,16 @@
   </b>
 </p>
 
-|                           PC demo                            |                             Mobile demo                              |
-| :----------------------------------------------------------: | :------------------------------------------------------------------: |
-| <img src="./assets/pc-demo.gif" height="350" alt="pc demo"/> | <img src="./assets/mobile-demo.gif" height="350" alt="mobile demo"/> |
+<table >
+  <tr>
+    <th>PC demo</th>
+    <td align="center"> <img src="./assets/pc-demo.gif" height="350" alt="pc demo"/></td>
+  </tr>
+  <tr>
+    <th>Mobile demo</th>
+    <td align="center"><img src="./assets/mobile-demo.gif" height="500" alt="mobile demo"/></td>
+  </tr>
+</table>
 
 ## Visit
 
