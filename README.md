@@ -48,31 +48,33 @@ and Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrende
 
 To run this project, you need to add the following environment variables to your `.env` :
 
--  **Server env configs:** Create `.env` file in `./`
+-  **Server configs:** Create `.env` file in `./`
 
    -  `DB_CONNECT`: API key of MongoDB to connect MongoDB's database.
-      -  You can use my MongoDB's database with Guess role (Read only) with this key:  
-         `DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio`
 
    Example:
 
    ```sh
    # .env
+   #  Guess credentials key (Read only)
    DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
    ```
 
-   -  **Client env configs (Optional):** Create `.env` file in `./client`
+-  **Client configs (Optional):** Create `.env` file in `./client`
 
    -  `REACT_APP_SERVER_URL`: URL of server.
-      -  You can use my server with this key:  
-         `REACT_APP_SERVER_URL=https://portfolio-n0cz.onrender.com`
 
    Example:
 
    ```sh
    # .env
-   REACT_APP_SERVER_URL=https://portfolio-n0cz.onrender.com
+   # Server URL or Empty if run server locally
+   REACT_APP_SERVER_URL = https://portfolio-n0cz.onrender.com
    ```
+
+You can also check out the file `.env.example` to see all required environment variables.
+
+> **Note**: If you want to use this example environment, you need to rename it to `.env`.
 
 ### Run locally
 
@@ -89,7 +91,7 @@ cd Portfolio
 npm run install-dependency
 ```
 
-Run client and server separately in 2 terminals:
+Run client and server separately in 2 terminals:  
 Client is running on port 3000
 
 ```sh
@@ -97,7 +99,7 @@ Client is running on port 3000
 npm run client
 ```
 
-server is running on port 5000
+Server is running on port 5000
 
 ```sh
 # Run server
