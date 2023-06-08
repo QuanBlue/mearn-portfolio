@@ -6,45 +6,89 @@
 
 <p align="center">My first portfolio project using MERN stack</p>
 
+<!-- Badges -->
+<p align="center">
+  <a href="https://github.com/QuanBlue/Portfolio/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/QuanBlue/Portfolio" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/QuanBlue/Portfolio" alt="last update" />
+  </a>
+  <a href="https://github.com/QuanBlue/Portfolio/network/members">
+    <img src="https://img.shields.io/github/forks/QuanBlue/Portfolio" alt="forks" />
+  </a>
+  <a href="https://github.com/QuanBlue/Portfolio/stargazers">
+    <img src="https://img.shields.io/github/stars/QuanBlue/Portfolio" alt="stars" />
+  </a>
+  <a href="https://github.com/QuanBlue/Portfolio/issues/">
+    <img src="https://img.shields.io/github/issues/QuanBlue/Portfolio" alt="open issues" />
+  </a>
+  <a href="https://github.com/QuanBlue/Portfolio/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/QuanBlue/Portfolio.svg" alt="license" />
+  </a>
+</p>
+
 <p align="center">
   <b>
-    <a href="#visit">Visit</a> •
-    <a href="#key-features">Key features</a> •
-    <a href="#getting-start">Getting start</a> •
-    <a href="#credits">Credits</a> •
-    <a href="#license">License</a>
+      <a href="#demo">Demo</a> •
+      <a href="https://github.com/QuanBlue/Portfolio">Documentation</a> •
+      <a href="https://github.com/QuanBlue/Portfolio/issues/">Report Bug</a> •
+      <a href="https://github.com/QuanBlue/Portfolio/issues/">Request Feature</a>
   </b>
 </p>
 
-<table >
-  <tr>
-    <th>PC demo</th>
-    <td align="center"> <img src="./assets/pc-demo.gif" height="350" alt="pc demo"/></td>
-  </tr>
-  <tr>
-    <th>Mobile demo</th>
-    <td align="center"><img src="./assets/mobile-demo.gif" height="500" alt="mobile demo"/></td>
-  </tr>
-</table>
+<br/>
 
-## Visit
+<div align="center">
+  <div>
+    <img src="./assets/pc-demo.gif" height="350" alt="pc demo"/>
+    <i>PC demo</i>
+  </div>
+  <br/>
+  <div >
+    <img src="./assets/mobile-demo.gif" height="450" alt="mobile demo"/>
+    <div>
+      <i>Mobile demo</i>
+    </div>
+  </div>
+</div>
 
-Check out my website: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)  
-and Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
+<details open>
+<summary><b>📖 Table of Contents</b></summary>
 
-## Key features
+-  [Demo](#film_projector-demo)
+-  [Key features](#star-key-features)
+-  [Getting start](#toolbox-getting-start)
+   -  [Prerequisites](#pushpin-prerequisites)
+   -  [Environment Variables](#key-environment-variables)
+   -  [Run locally](#hammer_and_wrench-run-locally)
+   -  [Run with Docker](#whale-run-with-docker)
+-  [Roadmap](#world_map-roadmap)
+-  [Contributors](#busts_in_silhouette-contributors)
+-  [Credits](#sparkles-credits)
+-  [License](#scroll-license)
+-  [Related Projects](#link-related-projects)
+</details>
+
+# :film_projector: Demo
+
+Check out deployed app:
+- Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)  
+- Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
+
+# :star: Key features
 
 -  Responsive - Dynamic responsive for all devices (mobile, desktop)
 -  MERN stack - **M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS
 
-## Getting start
+# :toolbox: Getting start
 
-### Prerequisites
+## :pushpin: Prerequisites
 
 -  NodeJS `>= v14.17.3`
 -  npm `>=8.3.1`
 
-### Environment Variables
+## :key: Environment Variables
 
 To run this project, you need to add the following environment variables to your `.env` :
 
@@ -76,7 +120,7 @@ You can also check out the file `.env.example` to see all required environment v
 
 > **Note**: If you want to use this example environment, you need to rename it to `.env`.
 
-### Run locally
+## :hammer_and_wrench: Run locally
 
 To clone and install dependencies of this application, you'll need [Git](https://git-scm.com) and [NodeJS](https://nodejs.org/en) installed on your computer. From your command line:
 
@@ -109,7 +153,31 @@ npm run server
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Credits
+## :whale: Run with Docker
+
+```sh
+docker-compose up
+```
+
+Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+# :world_map: Roadmap
+
+-  [x] Update theme
+-  [x] Emoji
+-  [x] Dockerize project
+-  [ ] Continuous delivery - Github Actions
+-  [ ] Add more features
+
+# :busts_in_silhouette: Contributors
+
+<a href="https://github.com/QuanBlue/Portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=QuanBlue/Portfolio" />
+</a>
+
+Contributions are always welcome!
+
+# :sparkles: Credits
 
 This software uses the following open source packages:
 
@@ -123,9 +191,15 @@ This software deployed by the following hosting services:
 -  [Netlify](https://www.netlify.com/) - Deploy frontend
 -  [Render](https://render.com/) - Deploy backend
 
-## License
+# :scroll: License
 
 Distributed under the MIT License. See <a href="./LICENSE">`LICENSE`</a> for more information.
+
+# :link: Related Projects
+
+-  <u>[**QuanBlue**](https://github.com/QuanBlue/QuanBlue)</u>: My bio
+-  <u>[**Portfolio**](https://github.com/QuanBlue/Portfolio)</u>: My first portfolio website, using MERN stack. [Visit here](https://quanblue.netlify.app/)
+-  <u>[**Readme-template**](https://github.com/QuanBlue/Portfolio)</u>: A template for creating README.md
 
 ---
 

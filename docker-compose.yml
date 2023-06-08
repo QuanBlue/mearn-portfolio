@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+   frontend:
+      image: frontend:latest
+      build:
+         context: ./client
+         dockerfile: Dockerfile
+      container_name: portfolio-frontend
+      ports:
+         - "3000:3000"
+      depends_on:
+         - backend
+   backend:
+      image: backend:latest
+      build: .
+      container_name: portfolio-backend
+      ports:
+         - "5000:5000"
