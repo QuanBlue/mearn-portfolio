@@ -46,7 +46,7 @@ jobs:
          # https://github.com/pozetroninc/github-action-get-latest-release
          - name: Get Latest Release
            id: latest_release
-           uses: pozetroninc/github-action-get-latest-release@v0.7.0
+           uses: pozetroninc/github-action-get-latest-release@master
 
          # Extract metadata (tags, labels) for Docker
          # https://github.com/docker/metadata-action
