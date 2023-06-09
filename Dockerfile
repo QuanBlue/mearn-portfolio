@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN if ! -f .env ; then cp .env.example .env; fi
+RUN if [ !  -f .env ]; then cp .env.example .env; fi
 
 EXPOSE 5000
 
