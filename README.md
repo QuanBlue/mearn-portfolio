@@ -64,6 +64,7 @@
   - [:pushpin: Prerequisites](#pushpin-prerequisites)
   - [:key: Environment Variables](#key-environment-variables)
   - [:hammer\_and\_wrench: Run locally](#hammer_and_wrench-run-locally)
+  - [:whale: Run with Docker compose](#whale-run-with-docker-compose)
   - [:whale: Run with Docker](#whale-run-with-docker)
 - [:world\_map: Roadmap](#world_map-roadmap)
 - [:busts\_in\_silhouette: Contributors](#busts_in_silhouette-contributors)
@@ -156,13 +157,27 @@ npm run server
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## :whale: Run with Docker
+## :whale: Run with Docker compose
 
 ```sh
 docker-compose up
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## :whale: Run with Docker
+
+Run server
+
+```sh
+docker run -d -p 5000:5000 --name portfolio-server ghcr.io/quanblue/portfolio-server:latest
+```
+
+Run client
+
+```sh
+docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-client:latest
+```
 
 # :world_map: Roadmap
 
