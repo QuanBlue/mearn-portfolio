@@ -42,11 +42,7 @@ jobs:
               username: ${{ github.actor }}
               password: ${{ secrets.GITHUB_TOKEN }}
 
-         # Get latest release
-         # https://github.com/pozetroninc/github-action-get-latest-release
-         - name: Get Latest Release
-           id: latest_release
-           uses: pozetroninc/github-action-get-latest-release@master
+         #
 
          # Extract metadata (tags, labels) for Docker
          # https://github.com/docker/metadata-action
@@ -56,7 +52,7 @@ jobs:
            with:
               images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-${{ github.job }}
               tags: |
-                 type=raw,${{ steps.latest_release.outputs.release }}
+                 type=raw,latest
 
          # Build and push Docker image with Buildx (don't push on PR)
          # https://github.com/docker/build-push-action
