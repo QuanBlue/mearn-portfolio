@@ -49,7 +49,7 @@ jobs:
          - name: Build and push Docker image
            env:
               REGISTRY_USERNAME: ${{ github.actor }}
-              REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+              REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
            if: github.event_name != 'pull_request'
            run: |
               echo $REGISTRY_PASSWORD | docker login ghcr.io -u $REGISTRY_USERNAME --password-stdin
