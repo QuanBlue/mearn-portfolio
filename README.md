@@ -42,7 +42,9 @@
 <div align="center">
   <div>
     <img src="./assets/pc-demo.gif" height="350" alt="pc demo"/>
-    <i>PC demo</i>
+    <div>
+      <i>PC demo</i>
+    </div>
   </div>
   <br/>
   <div >
