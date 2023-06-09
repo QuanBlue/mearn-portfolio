@@ -58,25 +58,26 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
--  [Demo](#film_projector-demo)
--  [Key features](#star-key-features)
--  [Getting start](#toolbox-getting-start)
-   -  [Prerequisites](#pushpin-prerequisites)
-   -  [Environment Variables](#key-environment-variables)
-   -  [Run locally](#hammer_and_wrench-run-locally)
-   -  [Run with Docker](#whale-run-with-docker)
--  [Roadmap](#world_map-roadmap)
--  [Contributors](#busts_in_silhouette-contributors)
--  [Credits](#sparkles-credits)
--  [License](#scroll-license)
--  [Related Projects](#link-related-projects)
+- [:film\_projector: Demo](#film_projector-demo)
+- [:star: Key features](#star-key-features)
+- [:toolbox: Getting start](#toolbox-getting-start)
+  - [:pushpin: Prerequisites](#pushpin-prerequisites)
+  - [:key: Environment Variables](#key-environment-variables)
+  - [:hammer\_and\_wrench: Run locally](#hammer_and_wrench-run-locally)
+  - [:whale: Run with Docker](#whale-run-with-docker)
+- [:world\_map: Roadmap](#world_map-roadmap)
+- [:busts\_in\_silhouette: Contributors](#busts_in_silhouette-contributors)
+- [:sparkles: Credits](#sparkles-credits)
+- [:scroll: License](#scroll-license)
+- [:link: Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
 
 Check out deployed app:
-- Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)  
-- Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
+
+-  Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)
+-  Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
 
 # :star: Key features
 
@@ -169,6 +170,8 @@ Then open [http://localhost:3000](http://localhost:3000) to view it in the brows
 -  [x] Emoji
 -  [x] Dockerize project
 -  [ ] Continuous delivery - Github Actions
+   -  [ ] Deploy to Netlify and Render
+   -  [ ] Deploy package
 -  [ ] Add more features
 
 # :busts_in_silhouette: Contributors
