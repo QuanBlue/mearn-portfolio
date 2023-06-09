@@ -52,6 +52,6 @@ jobs:
               REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
            if: github.event_name != 'pull_request'
            run: |
-              echo $REGISTRY_PASSWORD | docker login -u $REGISTRY_USERNAME --password-stdin
+              echo $REGISTRY_PASSWORD | docker login ghcr.io -u $REGISTRY_USERNAME --password-stdin
               docker-compose build
               docker-compose push
