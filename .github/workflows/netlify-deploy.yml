@@ -10,7 +10,7 @@ defaults:
       working-directory: ./client
 
 jobs:
-   build:
+   ci-cd pipeline:
       runs-on: ubuntu-latest
       steps:
          - name: Checkout repository

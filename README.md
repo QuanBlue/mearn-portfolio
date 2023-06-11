@@ -196,7 +196,8 @@ Access server at [http://localhost:5000](http://localhost:5000)
 -  [x] Emoji
 -  [x] Dockerize project
 -  [ ] Continuous deployment - Github Actions
-   -  [ ] Deploy to Netlify and Render
+   -  [x] Frontend - Netlify
+   -  [ ] Backend - Render
    -  [x] Deploy package
 -  [ ] Add more features
 
