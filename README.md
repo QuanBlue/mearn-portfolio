@@ -6,6 +6,13 @@
 
 <p align="center">My first portfolio project using MERN stack</p>
 
+<!-- Deploy status Badges -->
+<p align="center">
+  <a href="https://app.netlify.com/sites/quanblue/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/121ced98-15a7-45c0-96e4-df6215cbba5b/deploy-status" alt="Netlify Status"/>
+  </a>
+</p>
+
 <!-- Badges -->
 <p align="center">
   <a href="https://github.com/QuanBlue/Portfolio/graphs/contributors">
@@ -58,19 +65,19 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
-- [:film\_projector: Demo](#film_projector-demo)
-- [:star: Key features](#star-key-features)
-- [:toolbox: Getting start](#toolbox-getting-start)
-  - [:pushpin: Prerequisites](#pushpin-prerequisites)
-  - [:key: Environment Variables](#key-environment-variables)
-  - [:hammer\_and\_wrench: Run locally](#hammer_and_wrench-run-locally)
-  - [:whale: Run with Docker compose](#whale-run-with-docker-compose)
-  - [:whale: Run with Docker](#whale-run-with-docker)
-- [:world\_map: Roadmap](#world_map-roadmap)
-- [:busts\_in\_silhouette: Contributors](#busts_in_silhouette-contributors)
-- [:sparkles: Credits](#sparkles-credits)
-- [:scroll: License](#scroll-license)
-- [:link: Related Projects](#link-related-projects)
+-  [:film_projector: Demo](#film_projector-demo)
+-  [:star: Key features](#star-key-features)
+-  [:toolbox: Getting start](#toolbox-getting-start)
+   -  [:pushpin: Prerequisites](#pushpin-prerequisites)
+   -  [:key: Environment Variables](#key-environment-variables)
+   -  [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
+   -  [:whale: Run with Docker compose](#whale-run-with-docker-compose)
+   -  [:whale: Run with Docker](#whale-run-with-docker)
+-  [:world_map: Roadmap](#world_map-roadmap)
+-  [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
+-  [:sparkles: Credits](#sparkles-credits)
+-  [:scroll: License](#scroll-license)
+-  [:link: Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
@@ -163,7 +170,8 @@ npm run server
 docker-compose up
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Access client at [http://localhost:3000](http://localhost:3000)
+Access server at [http://localhost:5000](http://localhost:5000)
 
 ## :whale: Run with Docker
 
@@ -179,14 +187,17 @@ Run client
 docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-client:latest
 ```
 
+Access client at [http://localhost:3000](http://localhost:3000)
+Access server at [http://localhost:5000](http://localhost:5000)
+
 # :world_map: Roadmap
 
 -  [x] Update theme
 -  [x] Emoji
 -  [x] Dockerize project
--  [ ] Continuous delivery - Github Actions
+-  [ ] Continuous deployment - Github Actions
    -  [ ] Deploy to Netlify and Render
-   -  [ ] Deploy package
+   -  [x] Deploy package
 -  [ ] Add more features
 
 # :busts_in_silhouette: Contributors
