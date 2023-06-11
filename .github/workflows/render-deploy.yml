@@ -1,0 +1,41 @@
+name: "Render ci-cd pipeline"
+
+on:
+   push:
+      branches:
+         - master
+
+defaults:
+   run:
+      working-directory: ./client
+
+jobs:
+   ci-cd pipeline:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Checkout repository
+           uses: actions/checkout@v3
+
+         #  - name: Use Node.js 18.x
+         #    uses: actions/setup-node@v2
+         #    with:
+         #       node-version: 18.x
+         #       cache: "npm"
+         #       cache-dependency-path: package-lock.json
+
+         #  - name: Install dependencies
+         #    run: npm install
+
+         #  - name: Build file
+         #    run: npm run build
+
+         # deploy the application to render
+         - name: Render GitHub Action
+           uses: Bounceapp/render-action@0.6.0
+           with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+              render-token: ${{ secrets.RENDER_AUTH_TOKEN }}
+              service-id: ${{ secrets.RENDER_SITE_ID }}
+              retries: 20
+              wait: 16000
+              sleep: 30000
