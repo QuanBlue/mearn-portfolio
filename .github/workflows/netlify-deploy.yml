@@ -1,9 +1,19 @@
 name: "Netlify ci-cd pipeline"
 
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
 on:
+   # schedule:
+   #  - cron: '37 10 * * *'
    push:
-      branches:
-         - master
+      branches: [master]
+      # Publish semver tags as releases.
+      # tags: [ 'latest' ]
+   pull_request:
+      branches: [master]
 
 defaults:
    run:
@@ -12,10 +22,15 @@ defaults:
 jobs:
    ci-cd-pipeline:
       runs-on: ubuntu-latest
+
       steps:
+         # Checkout the repository
+         # https://github.com/actions/checkout
          - name: Checkout repository
            uses: actions/checkout@v3
 
+         # Set up GitHub Actions workflow with a specific version of node.js
+         # https://github.com/actions/setup-node
          - name: Use Node.js 18.x
            uses: actions/setup-node@v2
            with:
@@ -23,13 +38,16 @@ jobs:
               cache: "npm"
               cache-dependency-path: package-lock.json
 
+         # Install dependencies
          - name: Install dependencies
            run: npm install
 
+         # Build the application
          - name: Build file
            run: npm run build
 
-         # deploy the application to netlify
+         # Netlify deployments via GitHub actions
+         # https://github.com/South-Paw/action-netlify-deploy
          - name: Deploy Client production to Netlify
            uses: South-Paw/action-netlify-deploy@v1.2.0
            with:
