@@ -5,10 +5,6 @@ on:
       branches:
          - master
 
-defaults:
-   run:
-      working-directory: ./client
-
 jobs:
    ci-cd pipeline:
       runs-on: ubuntu-latest
