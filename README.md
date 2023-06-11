@@ -65,19 +65,19 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
--  [:film_projector: Demo](#film_projector-demo)
--  [:star: Key features](#star-key-features)
--  [:toolbox: Getting start](#toolbox-getting-start)
-   -  [:pushpin: Prerequisites](#pushpin-prerequisites)
-   -  [:key: Environment Variables](#key-environment-variables)
-   -  [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
-   -  [:whale: Run with Docker compose](#whale-run-with-docker-compose)
-   -  [:whale: Run with Docker](#whale-run-with-docker)
--  [:world_map: Roadmap](#world_map-roadmap)
--  [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
--  [:sparkles: Credits](#sparkles-credits)
--  [:scroll: License](#scroll-license)
--  [:link: Related Projects](#link-related-projects)
+-  [Demo](#film_projector-demo)
+-  [Key features](#star-key-features)
+-  [Getting start](#toolbox-getting-start)
+   -  [Prerequisites](#pushpin-prerequisites)
+   -  [Environment Variables](#key-environment-variables)
+   -  [Run locally](#hammer_and_wrench-run-locally)
+   -  [Run with Docker compose](#whale-run-with-docker-compose)
+   -  [Run with Docker](#whale-run-with-docker)
+-  [Roadmap](#world_map-roadmap)
+-  [Contributors](#busts_in_silhouette-contributors)
+-  [Credits](#sparkles-credits)
+-  [License](#scroll-license)
+-  [Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
@@ -195,9 +195,9 @@ Access server at [http://localhost:5000](http://localhost:5000)
 -  [x] Update theme
 -  [x] Emoji
 -  [x] Dockerize project
--  [ ] Continuous deployment - Github Actions
+-  [x] Continuous deployment - Github Actions
    -  [x] Frontend - Netlify
-   -  [ ] Backend - Render
+   -  [x] Backend - Render
    -  [x] Deploy package
 -  [ ] Add more features
 
