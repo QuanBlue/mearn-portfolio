@@ -6,7 +6,7 @@ on:
          - master
 
 jobs:
-   ci-cd pipeline:
+   ci-cd-pipeline:
       runs-on: ubuntu-latest
       steps:
          - name: Checkout repository
