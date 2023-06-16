@@ -183,23 +183,24 @@ docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-cl
 
 > **Note:** You need to run the project with Docker compose to use this feature.
 
-Both infrastructure monitoring and application telemetry use Prometheus to scrape metrics from the application. You can then observe these metrics using Grafana dashboards.
+Both infrastructure **monitoring** and **application telemetry** use `Prometheus` to scrape metrics from the application. You can then observe these metrics using `Grafana` dashboards.
 
 **Prometheus**
 
-To see the Prometheus targets go to http://localhost:9090/targets.
+To see the `Prometheus targets` go to http://localhost:9090/targets.
 
 **Grafana dashboards**
 
-To view Grafana dashboards go to http://localhost:7070 and log-in with:
+To view `Grafana dashboards` go to http://localhost:7070 and log-in with:
 
 > User: admin  
 > Password: admin
 
 # :world_map: Roadmap
 
--  [x] Update theme
--  [x] Emoji
+-  [x] Application
+   -  [x] Web UI - ReactJS
+   -  [x] Backend - MongoDB - Rest API
 -  [x] Dockerize project
 -  [x] Continuous deployment - Github Actions
    -  [x] Frontend - Netlify
@@ -207,8 +208,8 @@ To view Grafana dashboards go to http://localhost:7070 and log-in with:
    -  [x] Deploy package
 -  [ ] Monitoring and Logging
    -  [x] Scrape metrics - Prometheus
+   -  [ ] Alerting - Prometheus Alertmanager
    -  [ ] Data visualization - Grafana
--  [ ] Add more features
 
 # :busts_in_silhouette: Contributors
 
