@@ -58,19 +58,21 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
--  [Demo](#film_projector-demo)
--  [Key features](#star-key-features)
--  [Getting start](#toolbox-getting-start)
-   -  [Prerequisites](#pushpin-prerequisites)
-   -  [Environment Variables](#key-environment-variables)
-   -  [Run locally](#hammer_and_wrench-run-locally)
-   -  [Run with Docker compose](#whale-run-with-docker-compose)
-   -  [Run with Docker](#whale-run-with-docker)
--  [Roadmap](#world_map-roadmap)
--  [Contributors](#busts_in_silhouette-contributors)
--  [Credits](#sparkles-credits)
--  [License](#scroll-license)
--  [Related Projects](#link-related-projects)
+-  [:film_projector: Demo](#film_projector-demo)
+-  [:star: Key features](#star-key-features)
+-  [:toolbox: Getting start](#toolbox-getting-start)
+   -  [:pushpin: Prerequisites](#pushpin-prerequisites)
+   -  [:key: Environment Variables](#key-environment-variables)
+   -  [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
+      -  [Manually](#manually)
+      -  [Using Docker compose](#using-docker-compose)
+      -  [Using Docker](#using-docker)
+-  [Monitoring and Logging](#monitoring-and-logging)
+-  [:world_map: Roadmap](#world_map-roadmap)
+-  [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
+-  [:sparkles: Credits](#sparkles-credits)
+-  [:scroll: License](#scroll-license)
+-  [:link: Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
@@ -126,7 +128,7 @@ You can also check out the file `.env.example` to see all required environment v
 
 ## :hammer_and_wrench: Run locally
 
-To clone and install dependencies of this application, you'll need [Git](https://git-scm.com) and [NodeJS](https://nodejs.org/en) installed on your computer. From your command line:
+### Manually
 
 ```bash
 # Clone this repository
@@ -139,15 +141,12 @@ cd Portfolio
 npm run install-dependency
 ```
 
-Run client and server separately in 2 terminals:  
-Client is running on port 3000
+Run client and server separately in 2 terminals:
 
 ```sh
 # Run client
 npm run client
 ```
-
-Server is running on port 5000
 
 ```sh
 # Run server
@@ -157,16 +156,13 @@ npm run server
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## :whale: Run with Docker compose
+### Using Docker compose
 
 ```sh
 docker-compose up
 ```
 
-Access client at [http://localhost:3000](http://localhost:3000)
-Access server at [http://localhost:5000](http://localhost:5000)
-
-## :whale: Run with Docker
+### Using Docker
 
 Run server
 
@@ -180,8 +176,25 @@ Run client
 docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-client:latest
 ```
 
-Access client at [http://localhost:3000](http://localhost:3000)
-Access server at [http://localhost:5000](http://localhost:5000)
+> Access client at [http://localhost:3000](http://localhost:3000)  
+> Access server at [http://localhost:5000](http://localhost:5000)
+
+# Monitoring and Logging
+
+> **Note:** You need to run the project with Docker compose to use this feature.
+
+Both infrastructure monitoring and application telemetry use Prometheus to scrape metrics from the application. You can then observe these metrics using Grafana dashboards.
+
+**Prometheus**
+
+To see the Prometheus targets go to http://localhost:9090/targets.
+
+**Grafana dashboards**
+
+To view Grafana dashboards go to http://localhost:7070 and log-in with:
+
+> User: admin  
+> Password: admin
 
 # :world_map: Roadmap
 
@@ -192,6 +205,9 @@ Access server at [http://localhost:5000](http://localhost:5000)
    -  [x] Frontend - Netlify
    -  [x] Backend - Render
    -  [x] Deploy package
+-  [ ] Monitoring and Logging
+   -  [x] Scrape metrics - Prometheus
+   -  [ ] Data visualization - Grafana
 -  [ ] Add more features
 
 # :busts_in_silhouette: Contributors
@@ -215,6 +231,12 @@ This software deployed by the following hosting services:
 
 -  [Netlify](https://www.netlify.com/) - Deploy frontend
 -  [Render](https://render.com/) - Deploy backend
+
+Monitoring and Logging:
+
+-  [Grafana](https://grafana.com/) - Visualization
+-  [Prometheus](https://prometheus.io/) - Data collection
+-  Youtuber [@evanugarte](https://www.youtube.com/@evanugarte)
 
 Emoji and Badges from:
 
