@@ -195,7 +195,7 @@
 					"editorMode": "code",
 					"expr": "rest_api_response_time_durations_seconds_sum",
 					"instant": false,
-					"legendFormat": "{{route}}",
+					"legendFormat": "Status: {{status_code}} - {{route}}",
 					"range": true,
 					"refId": "A"
 				}
