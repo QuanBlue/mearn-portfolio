@@ -4,7 +4,7 @@ groups:
      rules:
         - alert: container_not_running
           expr: time() - container_last_seen > 10
-          for: 5m
+          for: 1m
           labels:
              severity: critical
           annotations:

@@ -2,9 +2,8 @@ version: "3.7"
 
 volumes:
    prometheus-data:
-      driver: local
    grafana-data:
-      driver: local
+   alertmanager-data:
 
 services:
    # --- frontend service ---
@@ -16,6 +15,7 @@ services:
       container_name: portfolio-frontend
       ports:
          - "3000:3000"
+      restart: unless-stopped
       depends_on:
          - backend
 
@@ -26,6 +26,7 @@ services:
       container_name: portfolio-backend
       ports:
          - "5000:5000"
+      restart: unless-stopped
 
    # --- data collection service ---
    prometheus:
@@ -75,3 +76,30 @@ services:
          - /dev/kmsg
       privileged: true
       restart: unless-stopped
+
+   # Alertmanager
+   alertmanager:
+      image: prom/alertmanager:latest
+      container_name: alert-manager
+      ports:
+         - 9093:9093
+      volumes:
+         - ./operations/alertmanager:/etc/alertmanager
+         - alertmanager-data:/data
+      command: --config.file=/etc/alertmanager/config.yml
+      restart: unless-stopped
+      depends_on:
+         - prometheus
+
+   # Alertmanager Discord webhook
+   discord-alerts:
+      image: benjojo/alertmanager-discord
+      container_name: discord-alerts
+      restart: unless-stopped
+      environment:
+         - DISCORD_WEBHOOK=${DISCORD_WEBHOOK_URL}
+
+      ports:
+         - 9094:9094
+      depends_on:
+         - alertmanager

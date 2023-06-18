@@ -84,7 +84,7 @@ Check out deployed app:
 
 # :star: Key features
 
--  Responsive - Dynamic responsive for all devices (mobile, desktop)
+-  Responsive design - Dynamic responsive for all devices (mobile, desktop)
 -  MERN stack - **M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS
 
 # :toolbox: Getting start
@@ -101,13 +101,18 @@ To run this project, you need to add the following environment variables to your
 -  **Server configs:** Create `.env` file in `./`
 
    -  `DB_CONNECT`: API key of MongoDB to connect MongoDB's database.
+   -  `DISCORD_WEBHOOK_URL`: Discord webhook URL to send alerts notification.
+      > Check [Making a Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) to know how to create a webhook.
 
    Example:
 
    ```sh
    # .env
-   #  Guess credentials key (Read only)
+   #  DB guess credentials key (Read only)
    DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
+
+   # Discord webhook URL
+   DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_SERVER_ID_HERE
    ```
 
 -  **Client configs (Optional):** Create `.env` file in `./client`
@@ -196,6 +201,9 @@ To view `Grafana dashboards` go to http://localhost:7070 and log-in with:
 > User: admin  
 > Password: admin
 
+**Alertmanager**
+To see the `Alertmanager` go to http://localhost:9093/#/alerts.
+
 # :world_map: Roadmap
 
 -  [x] Application
@@ -208,8 +216,10 @@ To view `Grafana dashboards` go to http://localhost:7070 and log-in with:
    -  [x] Deploy package
 -  [ ] Monitoring and Logging
    -  [x] Scrape metrics - Prometheus
-   -  [ ] Alerting - Prometheus Alertmanager
-   -  [ ] Data visualization - Grafana
+   -  [x] Alert
+      -  [x] Prometheus Alertmanager
+      -  [ ] Discord webhook
+   -  [x] Data visualization - Grafana
 
 # :busts_in_silhouette: Contributors
 
