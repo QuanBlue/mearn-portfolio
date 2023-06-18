@@ -5,10 +5,7 @@ const register = new Prometheus.Registry();
 
 // Probe every 5th second.
 const collectDefaultMetrics = Prometheus.collectDefaultMetrics;
-collectDefaultMetrics({
-	timeout: 5000,
-	register: register,
-});
+collectDefaultMetrics({ register: register });
 
 const metricsReadTotal = new Prometheus.Counter({
 	name: "app_metrics_read_total",

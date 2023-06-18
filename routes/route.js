@@ -6,7 +6,10 @@ const desSkill = require("../models/skill/desSkillModel");
 const toolkit = require("../models/skill/toolkitModel");
 const education = require("../models/educationModel");
 
-const { databaseResponseTimeHistogram } = require("../utils/metrics");
+const {
+	databaseResponseTimeHistogram,
+	metricsReadTotal,
+} = require("../utils/metrics");
 
 const { register } = require("../utils/metrics");
 
@@ -21,8 +24,10 @@ router.route("/metrics").get(async (req, res) => {
 router.route("/api/dev-skill").get((req, res) => {
 	console.log("🚀  /api/dev-skill");
 
+	metricsReadTotal.inc();
+
 	const metricsLabels = {
-		operation: "devSkill",
+		operation: "dev-skill",
 	};
 	const timer = databaseResponseTimeHistogram.startTimer();
 
@@ -42,8 +47,10 @@ router.route("/api/dev-skill").get((req, res) => {
 router.route("/api/des-skill").get((req, res) => {
 	console.log("🚀  /api/des-skill");
 
+	metricsReadTotal.inc();
+
 	const metricsLabels = {
-		operation: "desSkill",
+		operation: "des-skill",
 	};
 	const timer = databaseResponseTimeHistogram.startTimer();
 
@@ -62,6 +69,8 @@ router.route("/api/des-skill").get((req, res) => {
 // get toolkit
 router.route("/api/toolkit").get((req, res) => {
 	console.log("🚀  /api/toolkit");
+
+	metricsReadTotal.inc();
 
 	const metricsLabels = {
 		operation: "toolKit",
@@ -83,6 +92,9 @@ router.route("/api/toolkit").get((req, res) => {
 // get education
 router.route("/api/education").get((req, res) => {
 	console.log("🚀  /api/education");
+
+	metricsReadTotal.inc();
+
 	const metricsLabels = {
 		operation: "education",
 	};
