@@ -58,21 +58,21 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
--  [:film_projector: Demo](#film_projector-demo)
--  [:star: Key features](#star-key-features)
--  [:toolbox: Getting start](#toolbox-getting-start)
-   -  [:pushpin: Prerequisites](#pushpin-prerequisites)
-   -  [:key: Environment Variables](#key-environment-variables)
-   -  [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
+-  [Demo](#film_projector-demo)
+-  [Key features](#star-key-features)
+-  [Getting start](#toolbox-getting-start)
+   -  [Prerequisites](#pushpin-prerequisites)
+   -  [Environment Variables](#key-environment-variables)
+   -  [Run locally](#hammer_and_wrench-run-locally)
       -  [Manually](#manually)
       -  [Using Docker compose](#using-docker-compose)
       -  [Using Docker](#using-docker)
--  [Monitoring and Logging](#monitoring-and-logging)
--  [:world_map: Roadmap](#world_map-roadmap)
--  [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
--  [:sparkles: Credits](#sparkles-credits)
--  [:scroll: License](#scroll-license)
--  [:link: Related Projects](#link-related-projects)
+-  [Monitoring and Logging](#telescope-monitoring-and-logging)
+-  [Roadmap](#world_map-roadmap)
+-  [Contributors](#busts_in_silhouette-contributors)
+-  [Credits](#sparkles-credits)
+-  [License](#scroll-license)
+-  [Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
@@ -184,11 +184,15 @@ docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-cl
 > Access client at [http://localhost:3000](http://localhost:3000)  
 > Access server at [http://localhost:5000](http://localhost:5000)
 
-# Monitoring and Logging
+# :telescope: Monitoring and Logging
 
 > **Note:** You need to run the project with Docker compose to use this feature.
 
-Both infrastructure **monitoring** and **application telemetry** use `Prometheus` to scrape metrics from the application. You can then observe these metrics using `Grafana` dashboards.
+Both infrastructure **monitoring** and **application telemetry** use:
+
+-  `Prometheus` to scrape metrics from the application.
+-  You can then observe these metrics using `Grafana` dashboards.
+-  `alertmanager` to send alerts notification to `Discord` webhook.
 
 **Prometheus**
 
@@ -204,6 +208,8 @@ To view `Grafana dashboards` go to http://localhost:7070 and log-in with:
 **Alertmanager**
 To see the `Alertmanager` go to http://localhost:9093/#/alerts.
 
+> **Note:** Open `Discord` to see the alerts notification.
+
 # :world_map: Roadmap
 
 -  [x] Application
@@ -214,12 +220,11 @@ To see the `Alertmanager` go to http://localhost:9093/#/alerts.
    -  [x] Frontend - Netlify
    -  [x] Backend - Render
    -  [x] Deploy package
--  [ ] Monitoring and Logging
+-  [x] Monitoring and Logging
    -  [x] Scrape metrics - Prometheus
    -  [x] Alert
       -  [x] Prometheus Alertmanager
       -  [x] Discord webhook
-      -  [ ] Telegram bot
    -  [x] Data visualization - Grafana
 
 # :busts_in_silhouette: Contributors
