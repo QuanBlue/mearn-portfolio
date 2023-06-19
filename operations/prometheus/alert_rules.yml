@@ -1,0 +1,25 @@
+groups:
+   - name: alert_rules
+     interval: 5s
+     rules:
+        - alert: container_not_running
+          expr: |
+             absent(container_last_seen{name="alert-manager"})
+               or
+             absent(container_last_seen{name="cadvisor"})
+               or 
+             absent(container_last_seen{name="discord-alerts"})
+               or 
+             absent(container_last_seen{name="grafana"})
+               or 
+             absent(container_last_seen{name="portfolio-backend"})
+               or 
+             absent(container_last_seen{name="portfolio-frontend"})
+               or 
+             absent(container_last_seen{name="prometheus"})
+          for: 1m
+          labels:
+             severity: critical
+          annotations:
+             summary: Container "{{ $labels.name }}" not running
+             description: 'Container "{{ $labels.name }}" down'

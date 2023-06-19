@@ -5,7 +5,6 @@ global:
       monitor: "CI/CD Portfolio"
 
 # A scrape configuration containing exactly one endpoint to scrape:
-# Here it's Prometheus itself.
 scrape_configs:
    - job_name: "backend"
      static_configs:
@@ -13,12 +12,19 @@ scrape_configs:
 
    - job_name: "prometheus"
      static_configs:
-        - targets: ["localhost:9090"]
+        - targets: ["prometheus:9090"]
 
-   # cadvisor job
+   - job_name: "grafana"
+     static_configs:
+        - targets: ["grafana:7070"]
+
    - job_name: "cadvisor"
      static_configs:
         - targets: ["cadvisor:8080"]
+
+   - job_name: "alert-manager"
+     static_configs:
+        - targets: ["alertmanager:9093"]
 
 alerting:
    alertmanagers:
@@ -27,4 +33,4 @@ alerting:
 
 # Load and evaluate rules in this file every 'evaluation_interval' seconds.
 rule_files:
-   - /etc/prometheus/alert.rules
+   - /etc/prometheus/alert_rules.yml

@@ -218,7 +218,8 @@ To see the `Alertmanager` go to http://localhost:9093/#/alerts.
    -  [x] Scrape metrics - Prometheus
    -  [x] Alert
       -  [x] Prometheus Alertmanager
-      -  [ ] Discord webhook
+      -  [x] Discord webhook
+      -  [ ] Telegram bot
    -  [x] Data visualization - Grafana
 
 # :busts_in_silhouette: Contributors

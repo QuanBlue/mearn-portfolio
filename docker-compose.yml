@@ -37,8 +37,10 @@ services:
       volumes:
          - ./operations/prometheus:/etc/prometheus
          - prometheus-data:/prometheus
-         - ./operations/prometheus/alert.rules:/alertmanager/alert.rules
-      command: "--config.file=/etc/prometheus/prometheus.yml"
+         - ./operations/prometheus/alert_rules.yml:/alertmanager/alert_rules.yml
+      command: |
+         --config.file=/etc/prometheus/prometheus.yml
+         --query.lookback-delta=30s
       restart: unless-stopped
       depends_on:
          - backend
@@ -86,7 +88,10 @@ services:
       volumes:
          - ./operations/alertmanager:/etc/alertmanager
          - alertmanager-data:/data
-      command: --config.file=/etc/alertmanager/config.yml
+      command: |
+         --config.file=/etc/alertmanager/config.yml 
+         --log.level=debug 
+         --cluster.advertise-address=0.0.0.0:9093
       restart: unless-stopped
       depends_on:
          - prometheus

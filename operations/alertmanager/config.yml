@@ -9,4 +9,4 @@ receivers:
    - name: "discord_webhook"
      webhook_configs:
         - url: "http://discord-alerts:9094"
-          send_resolved: false
+          send_resolved: true
