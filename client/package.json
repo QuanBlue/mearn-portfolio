@@ -1,6 +1,6 @@
 {
 	"name": "quanblue",
-	"version": "1.2",
+	"version": "1.0.2",
 	"private": true,
 	"options": {
 		"allowedHosts": [
