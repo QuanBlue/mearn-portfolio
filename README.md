@@ -109,7 +109,7 @@ To run this project, you need to add the following environment variables to your
    ```sh
    # .env
    #  DB guess credentials key (Read only)
-   DB_CONNECT = mongodb://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
+   DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
 
    # Discord webhook URL
    DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_SERVER_ID_HERE
