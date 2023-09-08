@@ -58,21 +58,22 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
-- [:film_projector: Demo](#film_projector-demo)
-- [:star: Key features](#star-key-features)
-- [:toolbox: Getting start](#toolbox-getting-start)
-  - [:pushpin: Prerequisites](#pushpin-prerequisites)
-  - [:key: Environment Variables](#key-environment-variables)
-  - [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
+- [Demo](#film_projector-demo)
+- [Key features](#star-key-features)
+- [Getting start](#toolbox-getting-start)
+  - [Prerequisites](#pushpin-prerequisites)
+  - [Environment Variables](#key-environment-variables)
+  - [Run locally](#hammer_and_wrench-run-locally)
     - [Manually](#manually)
     - [Using Docker compose](#using-docker-compose)
     - [Using Docker](#using-docker)
-- [:telescope: Monitoring and Logging](#telescope-monitoring-and-logging)
-- [:world_map: Roadmap](#world_map-roadmap)
-- [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
-- [:sparkles: Credits](#sparkles-credits)
-- [:scroll: License](#scroll-license)
-- [:link: Related Projects](#link-related-projects)
+- [Monitoring and Logging](#telescope-monitoring-and-logging)
+- [CI/CD](#gear-cicd)
+- [Roadmap](#world_map-roadmap)
+- [Contributors](#busts_in_silhouette-contributors)
+- [Credits](#sparkles-credits)
+- [License](#scroll-license)
+- [Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
@@ -84,8 +85,10 @@ Check out deployed app:
 
 # :star: Key features
 
-- Responsive design - Dynamic responsive for all devices (mobile, desktop)
-- MERN stack - **M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS
+- **Responsive design** - Dynamic responsive for all devices (mobile, desktop)
+- **MERN stack** - Stack used for building web applications
+- **Monitoring and Logging** - Helping to ensure system reliability, troubleshoot issues, and gain insights into system performance
+- **CI/CD** - Deliver code changes frequently and reliably
 
 # :toolbox: Getting start
 
@@ -209,6 +212,17 @@ To view `Grafana dashboards` go to http://localhost:7070 and log-in with:
 To see the `Alertmanager` go to http://localhost:9093/#/alerts.
 
 > **Note:** Open `Discord` to see the alerts notification.
+
+# :gear: CI/CD
+
+Using `Github Actions` to:
+
+- Deploy the project to Netlify and Render.
+- Package the project to Docker image and push to Github Container Registry.
+
+CI/CD progress run automatically when you pull, push to `master` branch or manually run.
+
+> **Note:** watch the CI/CD flow in `.github/workflows/`
 
 # :world_map: Roadmap
 
