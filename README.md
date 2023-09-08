@@ -58,74 +58,74 @@
 <details open>
 <summary><b>📖 Table of Contents</b></summary>
 
--  [Demo](#film_projector-demo)
--  [Key features](#star-key-features)
--  [Getting start](#toolbox-getting-start)
-   -  [Prerequisites](#pushpin-prerequisites)
-   -  [Environment Variables](#key-environment-variables)
-   -  [Run locally](#hammer_and_wrench-run-locally)
-      -  [Manually](#manually)
-      -  [Using Docker compose](#using-docker-compose)
-      -  [Using Docker](#using-docker)
--  [Monitoring and Logging](#telescope-monitoring-and-logging)
--  [Roadmap](#world_map-roadmap)
--  [Contributors](#busts_in_silhouette-contributors)
--  [Credits](#sparkles-credits)
--  [License](#scroll-license)
--  [Related Projects](#link-related-projects)
+- [:film_projector: Demo](#film_projector-demo)
+- [:star: Key features](#star-key-features)
+- [:toolbox: Getting start](#toolbox-getting-start)
+  - [:pushpin: Prerequisites](#pushpin-prerequisites)
+  - [:key: Environment Variables](#key-environment-variables)
+  - [:hammer_and_wrench: Run locally](#hammer_and_wrench-run-locally)
+    - [Manually](#manually)
+    - [Using Docker compose](#using-docker-compose)
+    - [Using Docker](#using-docker)
+- [:telescope: Monitoring and Logging](#telescope-monitoring-and-logging)
+- [:world_map: Roadmap](#world_map-roadmap)
+- [:busts_in_silhouette: Contributors](#busts_in_silhouette-contributors)
+- [:sparkles: Credits](#sparkles-credits)
+- [:scroll: License](#scroll-license)
+- [:link: Related Projects](#link-related-projects)
 </details>
 
 # :film_projector: Demo
 
 Check out deployed app:
 
--  Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)
--  Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
+- Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)
+- Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
 
 # :star: Key features
 
--  Responsive design - Dynamic responsive for all devices (mobile, desktop)
--  MERN stack - **M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS
+- Responsive design - Dynamic responsive for all devices (mobile, desktop)
+- MERN stack - **M**ongoDB - **E**xpressJS - **R**eactJS - **N**odeJS
 
 # :toolbox: Getting start
 
 ## :pushpin: Prerequisites
 
--  NodeJS `>= v14.17.3`
--  npm `>=8.3.1`
+- NodeJS `>= v14.17.3`
+- npm `>=8.3.1`
 
 ## :key: Environment Variables
 
 To run this project, you need to add the following environment variables to your `.env` :
 
--  **Server configs:** Create `.env` file in `./`
+- **Server configs:** Create `.env` file in `./`
 
-   -  `DB_CONNECT`: API key of MongoDB to connect MongoDB's database.
-   -  `DISCORD_WEBHOOK_URL`: Discord webhook URL to send alerts notification.
-      > Check [Making a Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) to know how to create a webhook.
+  - `DB_CONNECT`: API key of MongoDB to connect MongoDB's database.
+  - `DISCORD_WEBHOOK_URL`: Discord webhook URL to send alerts notification.
+    > Check [Making a Webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) to know how to create a webhook.
 
-   Example:
+  Example:
 
-   ```sh
-   # .env
-   #  DB guess credentials key (Read only)
-   DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
+  ```sh
+  # .env
+  #  DB guess credentials key (Read only)
+  DB_CONNECT = mongodb+srv://guess:0aGRADHax24DXzCL@cluster0.wgaas.mongodb.net/portfolio
 
-   # Discord webhook URL
-   DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_SERVER_ID_HERE
-   ```
+  # Discord webhook URL
+  DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR_SERVER_ID_HERE
+  ```
 
--  **Client configs (Optional):** Create `.env` file in `./client`
+- **Client configs (Optional):** Create `.env` file in `./client`
 
-   -  `REACT_APP_SERVER_URL`: URL of server.
+  - `REACT_APP_SERVER_URL`: URL of server.
 
-   Example:
+  Example:
 
-   ```sh
-   # .env
-   # Server URL or Empty if run server locally
-   REACT_APP_SERVER_URL = https://portfolio-n0cz.onrender.com
-   ```
+  ```sh
+  # .env
+  # Server URL or Empty if run server locally
+  REACT_APP_SERVER_URL = https://portfolio-n0cz.onrender.com
+  ```
 
 You can also check out the file `.env.example` to see all required environment variables.
 
@@ -190,9 +190,9 @@ docker run -d -p 3000:3000 --name portfolio-client ghcr.io/quanblue/portfolio-cl
 
 Both infrastructure **monitoring** and **application telemetry** use:
 
--  `Prometheus` to scrape metrics from the application.
--  You can then observe these metrics using `Grafana` dashboards.
--  `alertmanager` to send alerts notification to `Discord` webhook.
+- `Prometheus` to scrape metrics from the application.
+- You can then observe these metrics using `Grafana` dashboards.
+- `alertmanager` to send alerts notification to `Discord` webhook.
 
 **Prometheus**
 
@@ -212,20 +212,20 @@ To see the `Alertmanager` go to http://localhost:9093/#/alerts.
 
 # :world_map: Roadmap
 
--  [x] Application
-   -  [x] Web UI - ReactJS
-   -  [x] Backend - MongoDB - Rest API
--  [x] Dockerize project
--  [x] Continuous deployment - Github Actions
-   -  [x] Frontend - Netlify
-   -  [x] Backend - Render
-   -  [x] Deploy package
--  [x] Monitoring and Logging
-   -  [x] Scrape metrics - Prometheus
-   -  [x] Alert
-      -  [x] Prometheus Alertmanager
-      -  [x] Discord webhook
-   -  [x] Data visualization - Grafana
+- [x] Application
+  - [x] Web UI - ReactJS
+  - [x] Backend - MongoDB - Rest API
+- [x] Dockerize project
+- [x] Continuous deployment - Github Actions
+  - [x] Frontend - Netlify
+  - [x] Backend - Render
+  - [x] Deploy package
+- [x] Monitoring and Logging
+  - [x] Scrape metrics - Prometheus
+  - [x] Alert
+    - [x] Prometheus Alertmanager
+    - [x] Discord webhook
+  - [x] Data visualization - Grafana
 
 # :busts_in_silhouette: Contributors
 
@@ -239,26 +239,26 @@ Contributions are always welcome!
 
 This software uses the following open source packages:
 
--  [ReactJS](https://react.dev/) - Frontend
--  [ExpressJS](https://expressjs.com/) - Backend
--  [Node.js](https://nodejs.org/) - Environment
--  [npm](https://www.npmjs.com/) - Package manager
+- [ReactJS](https://react.dev/) - Frontend
+- [ExpressJS](https://expressjs.com/) - Backend
+- [Node.js](https://nodejs.org/) - Environment
+- [npm](https://www.npmjs.com/) - Package manager
 
 This software deployed by the following hosting services:
 
--  [Netlify](https://www.netlify.com/) - Deploy frontend
--  [Render](https://render.com/) - Deploy backend
+- [Netlify](https://www.netlify.com/) - Deploy frontend
+- [Render](https://render.com/) - Deploy backend
 
 Monitoring and Logging:
 
--  [Grafana](https://grafana.com/) - Visualization
--  [Prometheus](https://prometheus.io/) - Data collection
--  Youtuber [@evanugarte](https://www.youtube.com/@evanugarte)
+- [Grafana](https://grafana.com/) - Visualization
+- [Prometheus](https://prometheus.io/) - Data collection
+- Youtuber [@evanugarte](https://www.youtube.com/@evanugarte)
 
 Emoji and Badges from:
 
--  [github@thebespokepixel](https://github.com/thebespokepixel/badges) - Badges
--  [github@WebpageFX](https://github.com/WebpageFX/emoji-cheat-sheet.com) - Emoji
+- [github@thebespokepixel](https://github.com/thebespokepixel/badges) - Badges
+- [github@WebpageFX](https://github.com/WebpageFX/emoji-cheat-sheet.com) - Emoji
 
 # :scroll: License
 
@@ -266,9 +266,9 @@ Distributed under the MIT License. See <a href="./LICENSE">`LICENSE`</a> for mor
 
 # :link: Related Projects
 
--  <u>[**QuanBlue**](https://github.com/QuanBlue/QuanBlue)</u>: My bio
--  <u>[**Portfolio**](https://github.com/QuanBlue/Portfolio)</u>: My first portfolio website, using MERN stack. [Visit here](https://quanblue.netlify.app/)
--  <u>[**Readme-template**](https://github.com/QuanBlue/Portfolio)</u>: A template for creating README.md
+- <u>[**QuanBlue**](https://github.com/QuanBlue/QuanBlue)</u>: My bio
+- <u>[**Portfolio**](https://github.com/QuanBlue/Portfolio)</u>: My first portfolio website, using MERN stack. [Visit here](https://quanblue.netlify.app/)
+- <u>[**Readme-template**](https://github.com/QuanBlue/Portfolio)</u>: A template for creating README.md
 
 ---
 

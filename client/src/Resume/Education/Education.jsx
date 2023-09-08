@@ -30,7 +30,7 @@ function Education() {
 		return () => {
 			isMounted = false;
 		};
-	});
+	}, []); // Empty dependency array ([]) to run this effect only once when the component mounts
 
 	let element_education = educations.map((education, index) => {
 		return (

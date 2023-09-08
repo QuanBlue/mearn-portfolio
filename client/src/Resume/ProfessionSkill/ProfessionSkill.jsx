@@ -64,16 +64,14 @@ function ProfessionSkill() {
 		return () => {
 			isMounted = false;
 		};
-	});
+	}, []); // Empty dependency array ([]) to run this effect only once when the component mounts
 
 	let element_devSkill = devSkills.map((devSkill, index) => {
 		return <Skill name={devSkill.name} key={index} />;
 	});
 
 	let element_toolkit = toolkits.map((toolkit, index) => {
-		return (
-			<Skill name={toolkit.name} percent={toolkit.percent} key={index} />
-		);
+		return <Skill name={toolkit.name} percent={toolkit.percent} key={index} />;
 	});
 
 	let element_desSkill = desSkills.map((desSkill, index) => {
