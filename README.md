@@ -243,8 +243,8 @@ CI/CD progress run automatically when you pull, push to `master` branch or manua
 
 # :busts_in_silhouette: Contributors
 
-<a href="https://github.com/QuanBlue/Portfolio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=QuanBlue/Portfolio" />
+<a href="https://github.com/QuanBlue/mearn-portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=QuanBlue/mearn-portfolio" />
 </a>
 
 Contributions are always welcome!
