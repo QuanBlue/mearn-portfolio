@@ -80,7 +80,7 @@
 
 Check out deployed app:
 
-- Frontend: [https://quanblue.herokuapp.com/](https://quanblue.herokuapp.com/)
+- Frontend: [https://quanblue.netlify.app/](https://quanblue.netlify.app/)
 - Server: [https://portfolio-n0cz.onrender.com](https://portfolio-n0cz.onrender.com)
 
 # :star: Key features
