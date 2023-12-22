@@ -29,7 +29,7 @@ jobs:
          # Render deployments via GitHub actions
          # https://github.com/Bounceapp/render-action
          - name: Deploy Server production to Render
-           uses: Bounceapp/render-action@0.6.0
+           uses: Bounceapp/render-action@0.8.0
            with:
               github-token: ${{ secrets.GITHUB_TOKEN }}
               render-token: ${{ secrets.RENDER_AUTH_TOKEN }}
